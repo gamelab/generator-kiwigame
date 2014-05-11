@@ -1,0 +1,31 @@
+{
+    "name": "<%= gameName%>",
+    "version": "0.1.0",
+    "filenameBase": "<%= gameNameLower%>",
+    "description": "Description for <%= gameName%>.",
+    "author": {
+        "name" : "",
+        "email" : ""
+        },
+
+    "homepage": "http://kiwijs.org/",
+    "bugs": "",
+    "license": "MIT",
+    "licenseUrl": "",
+
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+
+    "main": "src",
+
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.x",
+        "grunt-contrib-uglify": "0.2.x",
+        "grunt-contrib-copy":  "0.4.x",
+        "grunt-contrib-concat" : "latest",
+        "grunt-contrib-connect": "~0.3.0"
+    }
+}
