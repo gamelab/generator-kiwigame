@@ -62,16 +62,24 @@ var KiwijsGenerator = yeoman.generators.Base.extend({
     this.mkdir('src/states');
     this.mkdir('lib');
     this.mkdir('build');
+    this.mkdir('assets/img/');
+    this.mkdir('assets/img/loading/');
 
-    this.copy('index.html','index.html')
-    this.copy('readme.txt','readme.txt')
+    this.copy('index.html','index.html');
+    this.copy('readme.txt','readme.txt');
 
-    this.copy('game.js','src/game.js')
+    this.copy('game.js','src/game.js');
       
-    this.copy('states/intro.js','src/states/intro.js')
-    this.copy('states/loading.js','src/states/loading.js')
-    this.copy('states/play.js','src/states/play.js')
+    this.copy('states/intro.js','src/states/intro.js');
+    this.copy('states/loading.js','src/states/loading.js');
+    this.copy('states/play.js','src/states/play.js');
 
+    this.copy('kiwipreloader.js', 'lib/kiwipreloader.js');
+
+    this.copy('img/loading/loading-texture-atlas.json', 'assets/img/loading/loading-texture-atlas.json');
+    this.copy('img/loading/loading-texture-atlas.png', 'assets/img/loading/loading-texture-atlas.png');
+    this.copy('img/kiwijs-icons.png', 'assets/img/kiwijs-icons.png');
+    this.copy('img/kiwijs-name.png', 'assets/img/kiwijs-name.png');
     
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');

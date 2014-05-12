@@ -22,7 +22,7 @@
 
 var <%= gameName%> = <%= gameName%> || {};
 
-<%= gameName%>.Loading = new KiwiLoadingScreen('Loading','Intro',{width:600,height: 800}, 'assets/img/loading/');
+<%= gameName%>.Loading = new KiwiLoadingScreen('Loading', 'Intro', 'assets/img/loading/');
 
 <%= gameName%>.Loading.preload = function () {
     
@@ -30,6 +30,10 @@ var <%= gameName%> = <%= gameName%> || {};
     //Otherwise the loading graphics will load last, and that defies the whole point in loading them. 
     KiwiLoadingScreen.prototype.preload.call(this);
 
-    //this.addSpriteSheet('gems', 'assets/img/gems.png', 40, 40);
-    //game.stage.resize(480,720)
+    /**
+    * Replace with your own in-assets to load.
+    **/
+    this.addImage('kiwiName', 'assets/img/kiwijs-name.png');
+    this.addSpriteSheet('icons', 'assets/img/kiwijs-icons.png', 100, 90);
+
 };

@@ -9,11 +9,17 @@
 
 //Initialise the Kiwi Game. 
 
-var game = new Kiwi.Game('content', '<%= gameName%>', null, { renderer: <%= renderer%> });
+var gameOptions = {
+	renderer: <%= renderer%>, 
+	width: 800,
+	height: 600
+}
+
+var game = new Kiwi.Game('content', '<%= gameName%>', null, gameOptions);
 
 //Add all the States we are going to use.
 game.states.addState(<%= gameName%>.Loading);
 game.states.addState(<%= gameName%>.Intro);
 game.states.addState(<%= gameName%>.Play);
 
-game.states.switchState("<%= gameName%>.Loading");
+game.states.switchState("Loading");
