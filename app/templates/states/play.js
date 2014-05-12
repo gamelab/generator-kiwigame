@@ -38,17 +38,16 @@ var <%= gameName%> = <%= gameName%> || {};
   	this.crown.y = this.game.stage.height - this.crown.height - 10;
 
 
-  	this.hand = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 0, 10);
-  	this.hand.cellIndex = 11;
-  	this.hand.x = this.game.stage.width - this.hand.width  -10;
+  	this.bomb = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 0, 10);
+  	this.bomb.x = this.game.stage.width - this.bomb.width  -10;
 
 
   	//Add the GameObjects to the stage
   	this.addChild(this.heart);
   	this.addChild(this.crown);
   	this.addChild(this.sheild);
-  	this.addChild(this.hand);
-	this.addChild(this.name);
+  	this.addChild(this.bomb);
+	  this.addChild(this.name);
   
 }
 
