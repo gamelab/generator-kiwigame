@@ -1,9 +1,8 @@
-Name: Match 3 Blueprint
+Name: <%= gameName%> 
 Version: 1.0
 Type: Game
-Author: Kiwi.js Team
-Website: www.kiwijs.org
-KiwiJS last version tested: 0.6
+Author: You
+Website: Link to your website
 
 ----------------------------------------------------------------------------------------
 Versions
@@ -15,6 +14,4 @@ Versions
 ----------------------------------------------------------------------------------------
 Description:
 ----------------------------------------------------------------------------------------
-The Match 3 Blueprint is a basic example of a Match 3 game you can use to rapidly build your project and has common Match 3 functionality.
-
-If you have any problems then feel free to contact us via the http://www.kiwijs.org/help
+Thanks for using the Kiwi.JS yeoman game generator! If you have any problems, want to view tutorials, or want to just say hi, then visit us on http://www.kiwijs.org/
