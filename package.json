@@ -1,14 +1,14 @@
 {
   "name": "generator-kiwijs",
-  "version": "0.0.0",
-  "description": "Yeoman generator",
+  "version": "1.0.0",
+  "description": "Yeoman generator for Kiwi.js Games",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "rpkrepo/generator-kiwijs",
   "author": {
-    "name": "",
-    "email": "",
-    "url": "https://github.com/rpkrepo"
+    "name": "Ross Kettle",
+    "email": "support@kiwijs.org",
+    "url": "https://github.com/gamelab/generator-kiwigame"
   },
   "engines": {
     "node": ">=0.10.0"

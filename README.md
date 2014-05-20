@@ -1,47 +1,53 @@
-# generator-kiwijs [![Build Status](https://secure.travis-ci.org/rpkrepo/generator-kiwijs.png?branch=master)](https://travis-ci.org/rpkrepo/generator-kiwijs)
+# Kiwi.js Yeoman Generator (generator-kiwijs)
 
-> [Yeoman](http://yeoman.io) generator
+> To learn what yeoman is go here: [Yeoman](http://yeoman.io) generator
 
+## What does it do?
 
-## Getting Started
+The Kiwi.js Yeoman Generator lets you easily create a blank game from a template. It sets up the folder structure and all the files you need to get going.
 
-### What is Yeoman?
+## What you need
 
-Trick question. It's not a thing. It's this guy:
+You'll need to install [node.js](http://nodejs.org/).
+Make sure you have [git](http://git-scm.com/book/en/Getting-Started-Installing-Git) installed and referenced in your path.
 
-![](http://i.imgur.com/JHaAlBJ.png)
+## How to install
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```
-$ npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-kiwijs from npm, run:
+To install the kiwi.js generator 
 
 ```
 $ npm install -g generator-kiwijs
 ```
 
-Finally, initiate the generator:
+## Using the generator
+
+You're now ready to start generating game templates.
+
+1 Create a folder for your game and navigate into that folder
+
+2 Initiate the generator
 
 ```
 $ yo kiwijs
 ```
 
-### Getting To Know Yeoman
+3 Answer the questions that Yeoman asks you. 
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+4 Wait for Yeoman to install your game.
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+5 Run grunt to build your game
+
+```
+$ grunt
+```
+
+6 Optionally you can the following to start a server on localhost:9000 which serves your game
+
+```
+$ grunt serve
+```
 
 
-## License
 
-MIT
+
+

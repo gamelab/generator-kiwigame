@@ -62,6 +62,7 @@ var KiwijsGenerator = yeoman.generators.Base.extend({
     this.mkdir('src/states');
     this.mkdir('lib');
     this.mkdir('build');
+    this.mkdir('plugins');
     this.mkdir('assets/img/');
     this.mkdir('assets/img/loading/');
 
