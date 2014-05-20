@@ -174,6 +174,13 @@ KiwiLoadingScreen.prototype.loadProgress = function (percent, bytesLoaded, file)
 * 
 */
 KiwiLoadingScreen.prototype.fadeInHTML5 = function() {
+	var gl = this.game.stage.gl;
+	if (gl) {
+	gl.blendEquationSeparate(gl.FUNC_ADD,gl.FUNC_ADD)
+
+    gl.blendFuncSeparate(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA, gl.ONE,gl.ONE);
+	}
+	
 	this.loadingTween.to({ alpha: 0 }, 500, Kiwi.Animations.Tweens.Easing.Linear.None);
 	this.loadingTween.onComplete(this.fadeOutHTML5, this);
 
