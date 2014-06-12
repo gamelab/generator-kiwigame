@@ -28,7 +28,7 @@ You're now ready to start generating game templates.
 2 Initiate the generator
 
 ```
-$ yo kiwijs
+$ yo kiwigame
 ```
 
 3 Answer the questions that Yeoman asks you. 
