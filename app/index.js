@@ -30,18 +30,23 @@ var KiwijsGenerator = yeoman.generators.Base.extend({
       name: 'gameName',
       message: "What would you like to call your game? (Use CamelCase, with an initial capital. Eg MsPacMan, not ms-pac-man)", 
       default: 'KiwiGame'
-  
     },
     {
-      type: 'prompt',
+      type: 'confirm',
       name: 'webgl',
-      message: "Would you like to render with WebGL? (works on fewer browsers, you can change it later) ", 
+      message: "Would you like to render with WebGL? This will work on fewer browsers but you can change it later. (Y/N)?", 
       default: false
     },
     {
-      type: 'prompt',
+      type: 'confirm',
       name: 'repo',
-      message: "Would you like to use the dev branch? (recommended for kiwi.js devs only) ", 
+      message: "Would you like to use the dev branch? (Y/N)", 
+      default: false
+    },
+    {
+      type: 'confirm',
+      name: 'cocoonJS',
+      message: "Do you intend to deploy using CocoonJS? (Y/N)", 
       default: false
     }
 
@@ -52,6 +57,7 @@ var KiwijsGenerator = yeoman.generators.Base.extend({
       this.gameNameLower = props.gameName.toLowerCase();
       this.renderer = (props.webgl) ? "Kiwi.RENDERER_WEBGL" : "Kiwi.RENDERER_CANVAS";
       this.repo = (props.repo) ? "https://github.com/gamelab/kiwi.js.git#dev" : "https://github.com/gamelab/kiwi.js.git";
+      this.cocoonJS = (props.cocoonJS) ? "Kiwi.TARGET_COCOON" : "Kiwi.TARGET_BROWSER";
       done();
     }.bind(this));
   },

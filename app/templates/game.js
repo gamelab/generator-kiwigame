@@ -12,7 +12,8 @@
 var gameOptions = {
 	renderer: <%= renderer%>, 
 	width: 800,
-	height: 600
+	height: 600,
+	deviceTarget: <%= cocoonJS%>
 }
 
 var game = new Kiwi.Game('content', '<%= gameName%>', null, gameOptions);

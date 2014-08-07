@@ -6,7 +6,6 @@ var <%= gameName%> = <%= gameName%> || {};
 * The PlayState in the core state that is used in the game. 
 *
 * It is the state where majority of the functionality occurs 'in-game' occurs.
-* 
 */
 
 
@@ -26,10 +25,10 @@ var <%= gameName%> = <%= gameName%> || {};
   	this.heart.y = this.game.stage.height - this.heart.height - 10;
 
 
-  	this.sheild = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 200, 200);
-  	this.sheild.cellIndex = 9;
-  	this.sheild.y = this.game.stage.height * 0.5 - this.sheild.height * 0.5;
-  	this.sheild.x = this.game.stage.width * 0.5 - this.sheild.width * 0.5;
+  	this.shield = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 200, 200);
+  	this.shield.cellIndex = 9;
+  	this.shield.y = this.game.stage.height * 0.5 - this.sheild.height * 0.5;
+  	this.shield.x = this.game.stage.width * 0.5 - this.sheild.width * 0.5;
 
 
   	this.crown = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 10, 10);
@@ -52,5 +51,16 @@ var <%= gameName%> = <%= gameName%> || {};
 }
 
 
+/**
+* An update method applied to a State is executed after the State has run the create method and thus this State is in affect.
+* The way we accomplish this is by overriding a State's regular update loop, so make sure at some point you call update loop of the Object that was overriden.
+*/
+<%= gameName%>.Play.update = function () { 
+
+  //Super method update loop
+  Kiwi.State.prototype.update.call( this );
+
+
+}
 
 
