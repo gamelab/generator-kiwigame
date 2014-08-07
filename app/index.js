@@ -34,19 +34,19 @@ var KiwijsGenerator = yeoman.generators.Base.extend({
     {
       type: 'confirm',
       name: 'webgl',
-      message: "Would you like to render with WebGL? This will work on fewer browsers but you can change it later. (Y/N)?", 
+      message: "Would you like to render with WebGL? This will work on fewer browsers but you can change it later.", 
       default: false
     },
     {
       type: 'confirm',
       name: 'repo',
-      message: "Would you like to use the dev branch? (Y/N)", 
+      message: "Would you like to use the dev branch?", 
       default: false
     },
     {
       type: 'confirm',
       name: 'cocoonJS',
-      message: "Do you intend to deploy using CocoonJS? (Y/N)", 
+      message: "Do you intend to deploy using CocoonJS?", 
       default: false
     }
 
