@@ -27,8 +27,8 @@ var <%= gameName%> = <%= gameName%> || {};
 
   	this.shield = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 200, 200);
   	this.shield.cellIndex = 9;
-  	this.shield.y = this.game.stage.height * 0.5 - this.sheild.height * 0.5;
-  	this.shield.x = this.game.stage.width * 0.5 - this.sheild.width * 0.5;
+  	this.shield.y = this.game.stage.height * 0.5 - this.shield.height * 0.5;
+  	this.shield.x = this.game.stage.width * 0.5 - this.shield.width * 0.5;
 
 
   	this.crown = new Kiwi.GameObjects.Sprite(this, this.textures.icons, 10, 10);
@@ -44,7 +44,7 @@ var <%= gameName%> = <%= gameName%> || {};
   	//Add the GameObjects to the stage
   	this.addChild(this.heart);
   	this.addChild(this.crown);
-  	this.addChild(this.sheild);
+  	this.addChild(this.shield);
   	this.addChild(this.bomb);
 	  this.addChild(this.name);
   
